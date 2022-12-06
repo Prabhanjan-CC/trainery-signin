@@ -6,10 +6,13 @@ import "./styles/layoutStyles.css";
 const TrainerLerning = () => {
   return (
     <div>
+      <div className="whole-box">
+        <div className="box-line"></div>
+      </div>
       <div>
         <div className="apps">Trainery HCM</div>
         <div>
-          <div className="box1" style={{ border: "0px" }}>
+          <div className="box1">
             <img
               alt=""
               src={One}

@@ -8,6 +8,9 @@ import "./styles/layoutStyles.css";
 const TrakApps = () => {
   return (
     <div>
+      <div className="whole-box-large">
+        <div className="box-line-large"></div>
+      </div>
       <div>
         <div className="apps">Trak Apps</div>
         <div>

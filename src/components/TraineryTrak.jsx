@@ -6,6 +6,9 @@ import "./styles/layoutStyles.css";
 const TraineryTrak = () => {
   return (
     <div>
+      <div className="whole-box">
+        <div className="box-line"></div>
+      </div>
       <div>
         <div className="apps">Trainery Trak</div>
         <div>

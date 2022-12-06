@@ -129,12 +129,12 @@ top: 140px; */
 
 .trainTrak {
   position: absolute;
-  top: 430px;
+  top: 450px;
 }
 
 .trakApps {
   position: absolute;
-  top: 590px;
+  top: 630px;
   padding-bottom: 80px;
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
