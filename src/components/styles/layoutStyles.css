@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #fafafa;
+  /* overflow: hidden; */
+  overflow-y: auto;
+  /* overflow-x: auto; */
+  overflow-x: hidden;
+}
+.apps {
+  /* My Apps */
+
+  position: relative;
+  width: 161px;
+  height: 21px;
+  left: 119px;
+  padding-top: 29px;
+  padding-bottom: 16px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  /* Dark Black/Text/Default */
+  color: #333333;
+  /* flex: 1; */
+}
+.textBlue {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #295bdc;
+  position: relative;
+  color: white;
+  text-align: center;
+  margin-left: 5px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  /* line-height: 12px; */
+}
+
+.box1 {
+  position: relative;
+  width: 140px;
+  height: 90px;
+  left: 119px;
+  /* top: 8px; */
+  /* White */
+
+  background: #ffffff;
+  /* Blue (theme) */
+
+  /* border: 2px solid #295bdc; */
+  box-shadow: 0px 4px 8px rgba(39, 83, 163, 0.2);
+  border-radius: 8px;
+
+  float: left;
+}
+
+.lmsLogo {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+  display: block;
+}
+
+.box2 {
+  position: relative;
+  width: 140px;
+  height: 90px;
+  left: 119px;
+  /* top: 8px; */
+  /* White */
+
+  background: #ffffff;
+  /* Blue (theme) */
+
+  /* border: 2px solid #295bdc; */
+  box-shadow: 0px 4px 8px rgba(39, 83, 163, 0.2);
+  border-radius: 8px;
+
+  float: left;
+  margin-left: 20px;
+}
+
+.default {
+  width: 103px;
+  height: 18px;
+  /* left: 184px;
+top: 140px; */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+
+  /* Dark Black/Text/Default */
+
+  color: #333333;
+
+  position: absolute;
+  margin-top: 105px;
+}
+
+.border {
+  position: relative;
+  width: 620px;
+  height: 0px;
+  left: 119px;
+  top: 168px;
+
+  /* Grey Border */
+
+  border: 1px solid #dadce0;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+footer {
+  clear: both;
+  position: relative;
+  height: 200px;
+  margin-top: -200px;
+}

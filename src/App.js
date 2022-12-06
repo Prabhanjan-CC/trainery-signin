@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SIgnUp from "./pages/SIgnUp";
 import SignIn from "./pages/SignIn";
-
+import Notifications from "./pages/Notifications";
 function App() {
   return (
     <>
@@ -11,6 +11,8 @@ function App() {
           <Route exact path="/" element={<SignIn />} />
 
           <Route exact path="/signup" element={<SIgnUp />} />
+
+          <Route exact path="/notifications" element={<Notifications />} />
         </Routes>
       </Router>
     </>

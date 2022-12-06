@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./sign-in-up.css";
+import "./styles/sign-in-up.css";
 import Logo from "../assets/logo_trainery.png";
 import Ellipse from "../assets/Ellipse5.png";
 import Image1 from "../assets/image1.png";
@@ -51,13 +51,7 @@ const SignIn = () => {
   return (
     <div>
       <div className="mainContainer">
-        <img
-          alt=""
-          src={Logo}
-          width="138.75"
-          height="30"
-          className="imgStyle"
-        />
+        <img alt="" src={Logo} width="138.75" height="30" className="logo" />
       </div>
       <img
         alt=""
@@ -128,6 +122,9 @@ const SignIn = () => {
         </span>
       </div>
       <img alt="" src={Union} width="77.48px" height="67px" className="img3" />
+      <button onClick={() => history("/notifications")}>
+        notification page
+      </button>
     </div>
   );
 };

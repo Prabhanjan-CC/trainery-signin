@@ -4,7 +4,7 @@ import Logo from "../assets/logo_trainery.png";
 import Ellipse from "../assets/Ellipse5.png";
 import Image1 from "../assets/image1.png";
 import Union from "../assets/Union.png";
-import "./sign-in-up.css";
+import "./styles/sign-in-up.css";
 // eslint-disable-next-line no-unused-vars
 import SimpleImageSlider from "react-simple-image-slider";
 
@@ -57,13 +57,7 @@ const SIgnUp = () => {
   return (
     <div>
       <div className="mainContainer">
-        <img
-          alt=""
-          src={Logo}
-          width="138.75"
-          height="30"
-          className="imgStyle"
-        />
+        <img alt="" src={Logo} width="138.75" height="30" className="logo" />
       </div>
       <img
         alt=""
