@@ -67,8 +67,8 @@ const Notifications = () => {
       <div className="trakApps">
         <TrakApps />
       </div>
-      <Recents />
-      <AppUpdates />
+      {/* <Recents />
+      <AppUpdates /> */}
       <footer>
         <Footer />
       </footer>
