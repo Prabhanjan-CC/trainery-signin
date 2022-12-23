@@ -1,14 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   height: 100%;
   width: 100%;
-  background-color: #daf0ff;
+  background-color: #ededed !important;
   overflow-y: auto;
   /* overflow-x: auto; */
   overflow-x: hidden;
 }
+
 .apps {
   /* My Apps */
 
@@ -29,6 +33,25 @@ body {
   /* Dark Black/Text/Default */
   color: #333333;
   /* flex: 1; */
+}
+.apps2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 100px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  /* Dark Black/Text/Default */
+  width: 100%;
+  color: #333333;
+  /* border-bottom: #333333; */
+  border-top: 3px solid #dadbdf;
+  border-bottom: 3px solid #dadbdf;
+  /* border: 2px solid #dadce0; */
 }
 .textBlue {
   width: 22px;
@@ -146,4 +169,13 @@ top: 140px; */
 .example {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+}
+
+section {
+  min-height: 90vh;
+}
+
+footer {
+  padding: 5%;
+  width: 90%;
 }

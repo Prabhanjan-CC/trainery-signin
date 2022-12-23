@@ -12,7 +12,7 @@ body {
   height: 530px;
   width: 929px;
   top: 60px;
-  left: 256px;
+  left: 206px;
   border-radius: 8px;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
   offset: 0px, 4px rgba(0, 0, 0, 0.08);
@@ -27,13 +27,13 @@ body {
 .imgStyle2 {
   position: absolute;
   top: 60px;
-  left: 1035px;
+  left: 985px;
 }
 .line {
   position: absolute;
   width: 0px;
   height: 530px;
-  left: 720px;
+  left: 670px;
   top: 60px;
   opacity: 0.5;
 
@@ -45,7 +45,7 @@ body {
   position: absolute;
   width: 92px;
   height: 36px;
-  left: 308px;
+  left: 258px;
   top: 185px;
 
   font-family: "Poppins";
@@ -63,7 +63,7 @@ body {
   position: absolute;
   width: 331px;
   height: 44px;
-  left: 308px;
+  left: 258px;
   top: 242px;
 
   font-family: "Roboto";
@@ -84,7 +84,7 @@ body {
   position: absolute;
   height: 52px;
   width: 360px;
-  left: 308px;
+  left: 258px;
   top: 322px;
 
   /* White */
@@ -131,7 +131,7 @@ body {
   position: absolute;
   width: 360px;
   height: 52px;
-  left: 308px;
+  left: 258px;
   top: 394px;
 
   /* Blue (theme) */
@@ -157,7 +157,7 @@ body {
   position: absolute;
   width: 129px;
   height: 19px;
-  left: 424px;
+  left: 374px;
   top: 470px;
 
   font-family: "Roboto";
@@ -175,7 +175,7 @@ body {
   position: absolute;
   width: 347px;
   height: 60px;
-  left: 768px;
+  left: 718px;
   top: 198px;
 
   font-family: "Poppins";
@@ -192,14 +192,14 @@ body {
   position: absolute;
   /* width: 504.87px;
 height: 161.78px; */
-  left: 734.6px;
+  left: 684.6px;
   top: 304px;
 }
 .end-text {
   position: absolute;
   width: 312px;
   height: 19px;
-  left: 563px;
+  left: 513px;
   top: 614px;
 
   font-family: "Roboto";
@@ -219,7 +219,7 @@ height: 161.78px; */
   position: absolute;
   /* width: 504.87px;
 height: 161.78px; */
-  left: 766px;
+  left: 716px;
   top: 65px;
 }
 .input-col2 {
@@ -228,8 +228,8 @@ height: 161.78px; */
   position: absolute;
   height: 52px;
   width: 360px;
-  left: 308px;
-  top: 394px;
+  left: 258px;
+  top: 344px;
 
   /* White */
 
@@ -275,7 +275,7 @@ height: 161.78px; */
   position: absolute;
   width: 360px;
   height: 52px;
-  left: 308px;
+  left: 258px;
   top: 466px;
 
   /* Blue (theme) */
@@ -301,7 +301,7 @@ height: 161.78px; */
   width: 129px;
   height: 19px;
   left: 424px;
-  top: 542px;
+  top: 492px;
 
   font-family: "Roboto";
   font-style: normal;
@@ -316,7 +316,7 @@ height: 161.78px; */
 }
 .eyeIcon {
   position: absolute;
-  left: 633px;
+  left: 583px;
   top: 412px;
 }
 
@@ -324,7 +324,7 @@ height: 161.78px; */
   position: absolute;
   width: 360px;
   height: 52px;
-  left: 308px;
+  left: 258px;
   top: 500px;
 
   /* Blue (theme) */

@@ -66,8 +66,33 @@ body {
 
   float: left;
 }
+.box11 {
+  position: relative;
+  width: 140px;
+  height: 90px;
+  left: 35px;
+  /* top: 8px; */
+  /* White */
+
+  background: #ffffff;
+  /* Blue (theme) */
+
+  /* border: 2px solid #295bdc; */
+  box-shadow: 0px 4px 8px rgba(39, 83, 163, 0.2);
+  border-radius: 8px;
+
+  float: left;
+}
 
 .lmsLogo {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+  display: block;
+}
+
+.lmsLogo1 {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -80,6 +105,24 @@ body {
   width: 140px;
   height: 90px;
   left: 139px;
+  /* top: 8px; */
+  /* White */
+
+  background: #ffffff;
+  /* Blue (theme) */
+
+  /* border: 2px solid #295bdc; */
+  box-shadow: 0px 4px 8px rgba(39, 83, 163, 0.2);
+  border-radius: 8px;
+
+  float: left;
+  margin-left: 20px;
+}
+.box22 {
+  position: relative;
+  width: 140px;
+  height: 90px;
+  left: 35px;
   /* top: 8px; */
   /* White */
 

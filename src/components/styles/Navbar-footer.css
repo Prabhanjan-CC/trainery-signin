@@ -28,14 +28,13 @@
 
 .Footer {
   position: absolute;
-  width: 1440px;
+  width: 100%;
   height: 45px;
   left: 0px;
   /* top: 903px; */
-  top: 600px;
+  /* top: 150px; */
+  top: 760px;
   bottom: 0px;
-  margin-top: 10px;
-
   /* White */
 
   background: #ffffff;

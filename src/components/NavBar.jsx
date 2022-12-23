@@ -2,7 +2,7 @@ import React from "react";
 import "./styles/Navbar-footer.css";
 import Logo from "../assets/logo_trainery.png";
 // import bellIcon from "../assets/Vector.png";
-import Profie from "../assets/profile.png";
+// import Profie from "../assets/profile.png";
 const NavBar = () => {
   return (
     <div className="container">
@@ -14,7 +14,7 @@ const NavBar = () => {
         height="22.34"
         className="bellIcon"
       /> */}
-      <img alt="" src={Profie} width="30" height="30" className="Profile" />
+      {/* <img alt="" src={Profie} width="30" height="30" className="Profile" /> */}
     </div>
   );
 };
