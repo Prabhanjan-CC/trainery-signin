@@ -76,7 +76,7 @@ body {
 
   background: #ffffff;
   /* Blue (theme) */
-
+  border: 1px solid white;
   /* border: 2px solid #295bdc; */
   box-shadow: 0px 4px 8px rgba(39, 83, 163, 0.2);
   border-radius: 8px;
@@ -128,13 +128,19 @@ body {
 
   background: #ffffff;
   /* Blue (theme) */
-
+  border: 1px solid white;
   /* border: 2px solid #295bdc; */
   box-shadow: 0px 4px 8px rgba(39, 83, 163, 0.2);
   border-radius: 8px;
 
   float: left;
   margin-left: 20px;
+}
+.box22:hover {
+  border: 1px solid #295bdc;
+}
+.box11:hover {
+  border: 1px solid #295bdc;
 }
 
 .default {

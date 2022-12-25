@@ -10,7 +10,7 @@
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
 }
 .imgStyle {
-  left: 118px;
+  left: 172px;
   top: 10px;
   position: relative;
 }
@@ -21,7 +21,7 @@
   position: absolute;
 }
 .Profile {
-  left: 1286px;
+  right: 300px;
   top: 12px;
   position: absolute;
 }
@@ -33,7 +33,7 @@
   left: 0px;
   /* top: 903px; */
   /* top: 150px; */
-  top: 760px;
+  top: 700px;
   bottom: 0px;
   /* White */
 
@@ -89,4 +89,44 @@
 .example {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+}
+
+.newText {
+  position: absolute;
+  width: 75px;
+  height: 21px;
+  right: 340px;
+  top: 12px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  /* Dark Black/Text/Default */
+
+  color: #333333;
+}
+
+.newText2 {
+  position: absolute;
+  width: 158px;
+  height: 18px;
+  right: 300px;
+  top: 31px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+
+  /* Dark Black/Text/Default */
+
+  color: #333333;
+
+  opacity: 0.8;
 }

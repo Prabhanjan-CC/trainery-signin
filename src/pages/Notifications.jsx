@@ -21,31 +21,20 @@ const Notifications = () => {
       <section>
         <NavBar />
         <div styles={{ felxDirection: "column" }}>
-          <div style={{ background: "white", marginTop: "15px" }}>
-            <div className="apps2">
-              CLIENT ID : USER001{" "}
-              <span style={{ paddingLeft: "30px" }}>
-                {" "}
-                CLIENT NAME : JOHN DOE
-              </span>
-            </div>
-          </div>
           <Card
             size="small"
-            title={
-              <div>
-                My apps <span className="textBlue">{number}</span>
-              </div>
-            }
             style={{
-              width: 400,
-              marginLeft: 100,
+              width: 975,
+              marginLeft: 168,
               paddingBottom: 10,
               marginTop: 15,
               borderRadius: 15,
             }}
           >
             <div>
+              <div className="myapps">
+                My apps <span className="textBlue">{number}</span>{" "}
+              </div>
               <div
                 className="box11"
                 style={{ border: select ? "2px solid #295bdc" : " " }}
@@ -54,11 +43,12 @@ const Notifications = () => {
                 <img
                   alt=""
                   src={One}
-                  width="100.64"
-                  height="18.05"
+                  width="97.64"
+                  height="15.05"
                   className="lmsLogo"
                 />
               </div>
+
               <div
                 className="box22"
                 style={{ border: !select ? "2px solid #295bdc" : " " }}
@@ -67,8 +57,8 @@ const Notifications = () => {
                 <img
                   alt=""
                   src={Two}
-                  width="100.64"
-                  height="18.05"
+                  width="97.64"
+                  height="15.05"
                   className="lmsLogo"
                 />
               </div>

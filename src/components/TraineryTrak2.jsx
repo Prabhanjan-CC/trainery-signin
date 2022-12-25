@@ -9,42 +9,45 @@ const TraineryTrak2 = () => {
     <div>
       <Card
         size="small"
-        title="TRAINERY TRAK"
-        // eslint-disable-next-line jsx-a11y/anchor-is-valid
         style={{
-          width: 400,
-          marginLeft: 100,
+          width: 975,
+          marginLeft: 168,
           paddingBottom: 10,
           marginTop: 35,
           borderRadius: 15,
         }}
       >
-        <div
-          className="box11"
-          style={{ border: select ? "2px solid #295bdc" : " " }}
-          onClick={() => setSelect(true)}
-        >
-          <img
-            alt=""
-            src={One}
-            width="100.64"
-            height="18.05"
-            className="lmsLogo"
-          />
-        </div>
-        <div
-          className="box22"
-          style={{ border: !select ? "2px solid #295bdc" : " " }}
-          onClick={() => setSelect(false)}
-        >
-          <img
-            alt=""
-            src={Two}
-            width="100.64"
-            height="18.05"
-            className="lmsLogo"
-          />
-        </div>
+        <>
+          <div className="myapps">
+            TRAINERY TRAK<span className="textBlue">2</span>{" "}
+          </div>
+          <div
+            className="box11"
+            style={{ border: select ? "2px solid #295bdc" : " " }}
+            onClick={() => setSelect(true)}
+          >
+            <img
+              alt=""
+              src={One}
+              width="97.64"
+              height="15.05"
+              className="lmsLogo"
+            />
+          </div>
+          <div
+            className="box22"
+            style={{ border: !select ? "2px solid #295bdc" : " " }}
+            onClick={() => setSelect(false)}
+          >
+            <img
+              alt=""
+              src={Two}
+              width="97.64"
+              height="15.05"
+              className="lmsLogo"
+            />
+          </div>
+        </>
       </Card>
     </div>
   );
