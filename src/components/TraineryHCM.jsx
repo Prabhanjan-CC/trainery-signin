@@ -9,7 +9,6 @@ const CardTesting2 = () => {
     <div>
       <Card
         size="small"
-        // eslint-disable-next-line jsx-a11y/anchor-is-valid
         style={{
           width: 975,
           marginLeft: 168,

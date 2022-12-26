@@ -2,15 +2,12 @@ import React, { useState } from "react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import "./styles/notifications.css";
+import "../components/styles/layoutStyles.css";
 import { Card } from "antd";
 import One from "../assets/TRAKLearning.png";
 import Two from "../assets/TRAKCoaching.png";
-// import TrainerLerning from "../components/TrainerLerning";
-// import TraineryTrak from "../components/TraineryTrak";
+
 import CardTesting from "../components/TraineryTrak2";
-// import TrakApps from "../components/TrakApps";
-// import Recents from "../components/Recents";
-// import AppUpdates from "../components/AppUpdates";
 import CardTesting2 from "../components/TraineryHCM";
 const Notifications = () => {
   // eslint-disable-next-line no-unused-vars
@@ -20,20 +17,20 @@ const Notifications = () => {
     <div>
       <section>
         <NavBar />
-        <div styles={{ felxDirection: "column" }}>
+        <div>
           <Card
             size="small"
             style={{
               width: 975,
               marginLeft: 168,
               paddingBottom: 10,
-              marginTop: 15,
+              marginTop: 35,
               borderRadius: 15,
             }}
           >
             <div>
               <div className="myapps">
-                My apps <span className="textBlue">{number}</span>{" "}
+                My apps<span className="textBlue">{number}</span>{" "}
               </div>
               <div
                 className="box11"
@@ -65,13 +62,9 @@ const Notifications = () => {
             </div>
           </Card>
         </div>
-
         <CardTesting2 />
         <CardTesting />
-        {/* <Recents />
-      <AppUpdates /> */}
       </section>
-
       <Footer />
     </div>
   );
