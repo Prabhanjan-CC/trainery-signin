@@ -2,8 +2,8 @@ import React from "react";
 import { Card } from "antd";
 import One from "../assets/COMPBldr logo.png";
 import Two from "../assets/TraineryLMS-Logo.png";
-import Three from "../assets/reviewcloud logo.png";
-import Four from "../assets/TRAKCertification.png";
+import Three from "../assets/ReviewCloud_Logo_Color.png";
+import Four from "../assets/delegateHR_Logo_Color.png";
 const CardTesting2 = () => {
   return (
     <div>
@@ -54,7 +54,7 @@ const CardTesting2 = () => {
               alt=""
               src={Four}
               width="99.56"
-              height="13.15"
+              height="23.15"
               className="lmsLogo"
             />
           </div>
