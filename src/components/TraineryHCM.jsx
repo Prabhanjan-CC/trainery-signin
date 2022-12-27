@@ -4,6 +4,7 @@ import One from "../assets/COMPBldr logo.png";
 import Two from "../assets/TraineryLMS-Logo.png";
 import Three from "../assets/ReviewCloud_Logo_Color.png";
 import Four from "../assets/delegateHR_Logo_Color.png";
+import "./styles/layoutStyles.css";
 const CardTesting2 = () => {
   return (
     <div>
@@ -21,7 +22,7 @@ const CardTesting2 = () => {
           <div className="myapps">
             TRAINERY HCM<span className="textBlue">4</span>{" "}
           </div>
-          <div className="box11">
+          <div className="box">
             <img
               alt=""
               src={One}
@@ -30,7 +31,7 @@ const CardTesting2 = () => {
               className="lmsLogo"
             />
           </div>
-          <div className="box22">
+          <div className="box">
             <img
               alt=""
               src={Two}
@@ -39,7 +40,7 @@ const CardTesting2 = () => {
               className="lmsLogo"
             />
           </div>
-          <div className="box22">
+          <div className="box">
             <img
               alt=""
               src={Three}
@@ -48,7 +49,7 @@ const CardTesting2 = () => {
               className="lmsLogo"
             />
           </div>
-          <div className="box22">
+          <div className="box">
             <img
               alt=""
               src={Four}

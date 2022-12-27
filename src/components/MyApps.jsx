@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import { Card } from "antd";
+import { Checkbox } from "antd";
 import One from "../assets/TRAKLearning.png";
 import Two from "../assets/TRAKCoaching.png";
 import "./styles/layoutStyles.css";
-const TraineryTrak2 = () => {
+const MyApps = () => {
+  // eslint-disable-next-line no-unused-vars
+  const [number, setNumber] = useState(2);
   const [select, setSelect] = useState(true);
+
   return (
     <div>
       <Card
@@ -17,10 +21,10 @@ const TraineryTrak2 = () => {
           borderRadius: 15,
         }}
       >
-        <>
-          <div className="myapps">
-            TRAINERY TRAK<span className="textBlue">2</span>{" "}
-          </div>
+        <div className="myapps">
+          My apps<span className="textBlue">{number}</span>{" "}
+        </div>
+        <div className="grid-container">
           <div
             className="box"
             style={{ border: select ? "2px solid #295bdc" : " " }}
@@ -34,6 +38,11 @@ const TraineryTrak2 = () => {
               className="lmsLogo"
             />
           </div>
+          <div className="item">
+            Set as Default <Checkbox style={{ paddingLeft: "5px" }} />
+          </div>
+        </div>
+        <div className="grid-container">
           <div
             className="box"
             style={{ border: !select ? "2px solid #295bdc" : " " }}
@@ -47,10 +56,14 @@ const TraineryTrak2 = () => {
               className="lmsLogo"
             />
           </div>
-        </>
+
+          <div className="item">
+            Set as Default <Checkbox style={{ paddingLeft: "5px" }} />
+          </div>
+        </div>
       </Card>
     </div>
   );
 };
 
-export default TraineryTrak2;
+export default MyApps;

@@ -71,23 +71,6 @@ body {
   /* line-height: 12px; */
 }
 
-.box1 {
-  position: relative;
-  width: 140px;
-  height: 90px;
-  left: 119px;
-  /* top: 8px; */
-  /* White */
-
-  background: #ffffff;
-  /* Blue (theme) */
-
-  box-shadow: 0px 4px 8px rgba(39, 83, 163, 0.2);
-  border-radius: 8px;
-
-  float: left;
-}
-
 .lmsLogo {
   position: relative;
   top: 50%;
@@ -96,70 +79,6 @@ body {
   display: block;
 }
 
-.box2 {
-  position: relative;
-  width: 140px;
-  height: 90px;
-  left: 119px;
-  /* top: 8px; */
-  /* White */
-
-  background: #ffffff;
-  /* Blue (theme) */
-
-  /* border: 2px solid #295bdc; */
-  box-shadow: 0px 4px 8px rgba(39, 83, 163, 0.2);
-  border-radius: 8px;
-
-  float: left;
-  margin-left: 20px;
-}
-
-.default {
-  width: 103px;
-  height: 18px;
-  /* left: 184px;
-top: 140px; */
-
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 18px;
-  /* identical to box height */
-
-  /* Dark Black/Text/Default */
-
-  color: #333333;
-
-  position: absolute;
-  margin-top: 105px;
-}
-
-.border {
-  position: absolute;
-  width: 620px;
-  height: 0px;
-  left: 119px;
-  top: 100px;
-  border: 1px solid #dadce0;
-}
-
-.trainLearn {
-  position: absolute;
-  top: 270px;
-}
-
-.trainTrak {
-  position: absolute;
-  top: 450px;
-}
-
-.trakApps {
-  position: absolute;
-  top: 630px;
-  padding-bottom: 80px;
-}
 /* Hide scrollbar for Chrome, Safari and Opera */
 ::-webkit-scrollbar {
   display: none;

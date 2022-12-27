@@ -9,9 +9,7 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/" element={<SignIn />} />
-
           <Route exact path="/signup" element={<SIgnUp />} />
-
           <Route exact path="/notifications" element={<Notifications />} />
         </Routes>
       </Router>
