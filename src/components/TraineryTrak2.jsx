@@ -6,12 +6,13 @@ import "./styles/layoutStyles.css";
 const TraineryTrak2 = () => {
   const [select, setSelect] = useState(true);
   return (
-    <div>
+    <div style={{ maxWidth: "1143px", width: "90%" }}>
       <Card
         size="small"
+        hoverable
         style={{
-          width: 975,
-          marginLeft: 168,
+          width: "auto",
+          marginLeft: "15%",
           paddingBottom: 10,
           marginTop: 35,
           borderRadius: 15,

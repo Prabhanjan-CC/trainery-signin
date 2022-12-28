@@ -7,12 +7,13 @@ import Four from "../assets/delegateHR_Logo_Color.png";
 import "./styles/layoutStyles.css";
 const CardTesting2 = () => {
   return (
-    <div>
+    <div style={{ maxWidth: "1143px", width: "90%" }}>
       <Card
         size="small"
+        hoverable
         style={{
-          width: 975,
-          marginLeft: 168,
+          width: "auto",
+          marginLeft: "15%",
           paddingBottom: 10,
           marginTop: 35,
           borderRadius: 15,

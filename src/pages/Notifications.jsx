@@ -5,7 +5,6 @@ import TraineryHCM from "../components/TraineryHCM";
 import TraineryTRAK from "../components/TraineryTrak2";
 import Footer from "../components/Footer";
 import "./styles/notifications.css";
-
 const Notifications = () => {
   return (
     <div>
