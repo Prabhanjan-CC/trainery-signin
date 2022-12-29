@@ -7,7 +7,7 @@ import Four from "../assets/delegateHR_Logo_Color.png";
 import "./styles/layoutStyles.css";
 const CardTesting2 = () => {
   return (
-    <div style={{ maxWidth: "1143px", width: "90%" }}>
+    <div style={{ maxWidth: "114.3rem", width: "90%" }}>
       <Card
         size="small"
         hoverable

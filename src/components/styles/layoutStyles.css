@@ -14,17 +14,17 @@ body {
   /* My Apps */
 
   position: relative;
-  width: 161px;
-  height: 21px;
-  left: 139px;
-  padding-top: 29px;
-  padding-bottom: 16px;
+  width: 16.1rem;
+  height: 2.1rem;
+  left: 13.9rem;
+  padding-top: 2.9rem;
+  padding-bottom: 1.6rem;
 
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
   /* identical to box height */
 
   /* Dark Black/Text/Default */
@@ -32,42 +32,42 @@ body {
   /* flex: 1; */
 }
 .textBlue {
-  width: 22px;
-  height: 22px;
+  width: 2.2rem;
+  height: 2.2rem;
   border-radius: 50%;
   display: inline-block;
   background-color: #295bdc;
   position: relative;
   color: white;
   text-align: center;
-  margin-left: 5px;
+  margin-left: 0.5rem;
 
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
-  /* line-height: 12px; */
+  font-size: 1.2rem;
+  /* line-height: 12rem; */
 }
 
 .box {
   position: relative;
   width: 90%;
-  max-width: 140px;
-  height: 90px;
-  margin-left: 35px;
+  max-width: 14rem;
+  height: 9rem;
+  margin-left: 3.5rem;
 
   background: #ffffff;
   /* Blue (theme) */
-  border: 2px solid white;
-  /* border: 2px solid #295bdc; */
-  box-shadow: 0px 4px 8px rgba(39, 83, 163, 0.2);
-  border-radius: 8px;
+  border: 0.2rem solid white;
+  /* border: 2rem solid #295bdc; */
+  box-shadow: 0rem 0.4rem 0.8rem rgba(39, 83, 163, 0.2);
+  border-radius: 0.8rem;
 
   float: left;
 }
 
 .box:hover {
-  border: 2px solid #7e93c9;
+  border: 0.2rem solid #7e93c9;
 }
 .lmsLogo {
   position: relative;
@@ -90,21 +90,49 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-rows: 1fr 15px;
+  grid-template-rows: 1fr 1.5rem;
   width: 90%;
-  max-width: 180px;
+  max-width: 18rem;
   float: left;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 .item {
   place-self: center;
-  margin-top: 28px;
-  margin-left: 35px;
+  margin-top: 2.8rem;
+  margin-left: 3.5rem;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+.myapps {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  padding: 1rem;
+  /* padding-bottom: 20rem; */
+  padding-top: 0.5rem;
+}
+
+.textBlue {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #295bdc;
+  position: relative;
+  color: white;
+  text-align: center;
+  margin-left: 0.5rem;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2rem;
+  /* line-height: 12rem; */
 }
 
 @media (max-width: 600px) {

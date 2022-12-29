@@ -1,60 +1,53 @@
 .container {
   position: relative;
   width: 100%;
-  height: 50px;
-  left: 0px;
-  top: 0px;
+  height: 5rem;
+  left: 0rem;
+  top: 0rem;
   /* White */
   display: flex;
   background: #ffffff;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+  box-shadow: 0rem 0.2rem 0.6rem rgba(0, 0, 0, 0.08);
 }
 .imgStyle {
-  margin-top: 10px;
+  margin-top: 1rem;
   position: relative;
-  margin-left: 212px;
+  margin-left: 21.2rem;
 }
 
-.bellIcon {
-  left: 1242px;
-  top: 15.76px;
-  position: absolute;
-}
 .Profile {
-  /* margin-right: 212px; */
-  margin-top: 12px;
-  /* position: absolute; */
-  /* margin-left: 0; */
+  /* margin-right: 212rem; */
+  margin-top: 1.2rem;
 }
 
 .Footer {
   position: relative;
   width: 100%;
-  height: 45px;
-  left: 0px;
-  /* top: 903px; */
-  /* top: 150px; */
-  margin-top: 35px;
-  bottom: 0px;
+  height: 4.5rem;
+  left: 0rem;
+  /* top: 903rem; */
+  /* top: 150rem; */
+  margin-top: 3.5rem;
+  bottom: 0rem;
   /* White */
 
   background: #ffffff;
-  box-shadow: 0px -1px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: 0rem -0.1rem 0.3rem rgba(0, 0, 0, 0.08);
 }
 
 .text-line {
   position: absolute;
-  width: 259px;
-  height: 24px;
-  left: 138px;
-  /* top: 610px; */
-  padding-top: 10px;
+  width: 25.9rem;
+  height: 2.4rem;
+  left: 13.8rem;
+  /* top: 610rem; */
+  padding-top: 1rem;
 
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
   /* identical to box height */
 
   /* Dark Black/Text/Default */
@@ -64,16 +57,16 @@
 
 .text-line2 {
   position: absolute;
-  width: 732px;
-  height: 21px;
-  left: 567px;
-  /* top: 923px; */
-  padding-top: 15px;
+  width: 73.2rem;
+  height: 2.1rem;
+  left: 56.7rem;
+  /* top: 923rem; */
+  padding-top: 1.5rem;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-size: 13.5px;
-  line-height: 21px;
+  font-size: 1.35rem;
+  line-height: 2.1rem;
   /* identical to box height */
 
   /* Dark Black/Text/Default */
@@ -93,15 +86,15 @@
 }
 
 .newText {
-  height: 21px;
+  height: 2.1rem;
   text-align: end;
-  margin-top: 10px;
+  margin-top: 1rem;
 
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
   /* identical to box height */
 
   /* Dark Black/Text/Default */
@@ -110,12 +103,12 @@
 }
 
 .newText2 {
-  height: 18px;
+  height: 1.8rem;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
   /* identical to box height */
 
   /* Dark Black/Text/Default */
@@ -126,11 +119,10 @@
 }
 
 .textsNav {
-  /* position: absolute; */
   display: flex;
-  margin-left: 650px;
+  margin-left: 65rem;
 }
 
 .textsTwo {
-  padding-right: 5px;
+  padding-right: 0.5rem;
 }

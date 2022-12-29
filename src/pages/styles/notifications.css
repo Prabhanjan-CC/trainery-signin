@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+html {
+  font-size: 62.5%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,72 +16,6 @@ body {
   overflow-y: auto;
   /* overflow-x: auto; */
   overflow-x: hidden;
-}
-
-.apps {
-  /* My Apps */
-
-  position: relative;
-  width: 161px;
-  height: 21px;
-  left: 119px;
-  padding-top: 29px;
-  padding-bottom: 16px;
-
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
-  /* identical to box height */
-
-  /* Dark Black/Text/Default */
-  color: #333333;
-  /* flex: 1; */
-}
-.apps2 {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 100px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
-  /* identical to box height */
-
-  /* Dark Black/Text/Default */
-  width: 100%;
-  color: #333333;
-  /* border-bottom: #333333; */
-  border-top: 3px solid #dadbdf;
-  border-bottom: 3px solid #dadbdf;
-  /* border: 2px solid #dadce0; */
-}
-.textBlue {
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  display: inline-block;
-  background-color: #295bdc;
-  position: relative;
-  color: white;
-  text-align: center;
-  margin-left: 5px;
-
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  /* line-height: 12px; */
-}
-
-.lmsLogo {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  margin: auto;
-  display: block;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -98,15 +36,4 @@ section {
 footer {
   padding: 5%;
   width: 90%;
-}
-
-.myapps {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
-  padding: 10px;
-  /* padding-bottom: 20px; */
-  padding-top: 5px;
 }

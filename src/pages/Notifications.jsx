@@ -8,12 +8,12 @@ import "./styles/notifications.css";
 const Notifications = () => {
   return (
     <div>
-      <section>
-        <NavBar />
-        <MyApps />
-        <TraineryHCM />
-        <TraineryTRAK />
-      </section>
+      <NavBar />
+      {/* cards start */}
+      <MyApps />
+      <TraineryHCM />
+      <TraineryTRAK />
+      {/* cards end */}
       <Footer />
     </div>
   );

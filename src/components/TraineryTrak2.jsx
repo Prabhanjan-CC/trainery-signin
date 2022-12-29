@@ -6,7 +6,7 @@ import "./styles/layoutStyles.css";
 const TraineryTrak2 = () => {
   const [select, setSelect] = useState(true);
   return (
-    <div style={{ maxWidth: "1143px", width: "90%" }}>
+    <div style={{ maxWidth: "114.3rem", width: "90%" }}>
       <Card
         size="small"
         hoverable
@@ -24,7 +24,7 @@ const TraineryTrak2 = () => {
           </div>
           <div
             className="box"
-            style={{ border: select ? "2px solid #295bdc" : " " }}
+            style={{ border: select ? "0.2rem solid #295bdc" : " " }}
             onClick={() => setSelect(true)}
           >
             <img
@@ -37,7 +37,7 @@ const TraineryTrak2 = () => {
           </div>
           <div
             className="box"
-            style={{ border: !select ? "2px solid #295bdc" : " " }}
+            style={{ border: !select ? "0.2rem solid #295bdc" : " " }}
             onClick={() => setSelect(false)}
           >
             <img
