@@ -12,7 +12,7 @@ const TraineryTrak2 = () => {
         hoverable
         style={{
           width: "auto",
-          marginLeft: "15%",
+          marginLeft: "18%",
           paddingBottom: 10,
           marginTop: 35,
           borderRadius: 15,
