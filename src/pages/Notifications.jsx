@@ -9,12 +9,14 @@ const Notifications = () => {
   return (
     <div>
       <NavBar />
-      <div>
+      <div className="main-container">
         <MyApps />
         <TraineryHCM />
         <TraineryTRAK />
       </div>
-      <Footer />
+      <footer className="footer-pin">
+        <Footer />
+      </footer>
     </div>
   );
 };
