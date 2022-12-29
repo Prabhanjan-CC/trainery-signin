@@ -9,13 +9,11 @@ const Notifications = () => {
   return (
     <div>
       <NavBar />
-      {/* cards start */}
-      <div style={{ position: "relative", minHeight: "100vh" }}>
+      <div>
         <MyApps />
         <TraineryHCM />
         <TraineryTRAK />
       </div>
-      {/* cards end */}
       <Footer />
     </div>
   );
