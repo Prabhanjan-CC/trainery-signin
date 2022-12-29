@@ -136,7 +136,10 @@ body {
 }
 
 @media (max-width: 600px) {
-  .item {
-    display: none;
+  .grid-container {
+    padding: 1rem;
+  }
+  .box {
+    margin: 1rem;
   }
 }

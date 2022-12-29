@@ -10,9 +10,11 @@ const Notifications = () => {
     <div>
       <NavBar />
       {/* cards start */}
-      <MyApps />
-      <TraineryHCM />
-      <TraineryTRAK />
+      <div style={{ position: "relative", minHeight: "100vh" }}>
+        <MyApps />
+        <TraineryHCM />
+        <TraineryTRAK />
+      </div>
       {/* cards end */}
       <Footer />
     </div>

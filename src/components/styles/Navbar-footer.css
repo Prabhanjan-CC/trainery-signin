@@ -6,13 +6,16 @@
   top: 0rem;
   /* White */
   display: flex;
+  justify-content: space-between;
+  /* padding-left: 20rem;
+  padding-right: 100rem; */
   background: #ffffff;
   box-shadow: 0rem 0.2rem 0.6rem rgba(0, 0, 0, 0.08);
 }
 .imgStyle {
   margin-top: 1rem;
   position: relative;
-  margin-left: 21.2rem;
+  margin-left: 18.2rem;
 }
 
 .Profile {
@@ -25,22 +28,20 @@
   width: 100%;
   height: 4.5rem;
   left: 0rem;
-  /* top: 903rem; */
-  /* top: 150rem; */
-  margin-top: 3.5rem;
-  bottom: 0rem;
-  /* White */
 
+  bottom: 0rem;
+
+  display: flex;
+  justify-content: space-around;
   background: #ffffff;
   box-shadow: 0rem -0.1rem 0.3rem rgba(0, 0, 0, 0.08);
 }
 
 .text-line {
-  position: absolute;
+  position: relative;
   width: 25.9rem;
   height: 2.4rem;
-  left: 13.8rem;
-  /* top: 610rem; */
+
   padding-top: 1rem;
 
   font-family: "Poppins";
@@ -56,11 +57,10 @@
 }
 
 .text-line2 {
-  position: absolute;
+  position: relative;
   width: 73.2rem;
   height: 2.1rem;
-  left: 56.7rem;
-  /* top: 923rem; */
+
   padding-top: 1.5rem;
   font-family: "Poppins";
   font-style: normal;
@@ -120,7 +120,7 @@
 
 .textsNav {
   display: flex;
-  margin-left: 65rem;
+  margin-right: 17rem;
 }
 
 .textsTwo {
