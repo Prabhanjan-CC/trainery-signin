@@ -14,11 +14,13 @@ const NavBar = () => {
         height="22.34"
         className="bellIcon"
       /> */}
-      <div>
-        <div className="newText"> JOHN DOE</div>
-        <div className="newText2"> CLIENT ID : USER001</div>
+      <div className="textsNav">
+        <div className="textsTwo">
+          <div className="newText"> JOHN DOE</div>
+          <div className="newText2"> CLIENT ID : USER001</div>
+        </div>
+        <img alt="" src={Profie} width="30" height="30" className="Profile" />
       </div>
-      <img alt="" src={Profie} width="30" height="30" className="Profile" />
     </div>
   );
 };
