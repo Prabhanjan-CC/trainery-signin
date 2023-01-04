@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SIgnUp from "./pages/SIgnUp";
 import SignIn from "./pages/SignIn";
 import Notifications from "./pages/Notifications";
+import Protected from "./components/Protected";
+
 function App() {
   return (
     <>
@@ -10,7 +12,14 @@ function App() {
         <Routes>
           <Route exact path="/" element={<SignIn />} />
           <Route exact path="/signup" element={<SIgnUp />} />
-          <Route exact path="/notifications" element={<Notifications />} />
+          <Route
+            path="/notifications"
+            element={
+              <Protected>
+                <Notifications />
+              </Protected>
+            }
+          />
         </Routes>
       </Router>
     </>

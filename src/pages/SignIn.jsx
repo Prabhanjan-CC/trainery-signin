@@ -1,13 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./styles/sign-in-up.css";
 import { useNavigate } from "react-router-dom";
 import Logo from "../assets/logo_trainery.png";
 import Ellipse from "../assets/Ellipse5.png";
 import Image1 from "../assets/image1.png";
 import Union from "../assets/Union.png";
+
+import Axios from "../api/Axios";
+
 const Newsignin = () => {
   const [email, setEmail] = useState("");
-  //const [password,setPassword]=useState("");
+  const [password, setPassword] = useState("");
   // eslint-disable-next-line no-unused-vars
   const [error, setError] = useState(null);
   const [acceptEmail, setAcceptEmail] = useState(false);
@@ -21,6 +24,12 @@ const Newsignin = () => {
   const navigate = () => {
     history("/signup");
   };
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token) {
+      history("/notifications");
+    }
+  }, [history]);
   const togglePasswordVisiblity = () => {
     setHidePassword(!hidePassword);
   };
@@ -46,7 +55,34 @@ const Newsignin = () => {
       setShowPassword(true);
     }
   };
-  const handleSubmit = () => {};
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log(email, password);
+    try {
+      const res = await Axios.post("/login/", {
+        email: email,
+        password: password,
+      });
+      localStorage.setItem("token", res.data.token);
+      history("/notifications");
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  // const handleSubmit2 = (e) => {
+  //   e.preventDefault();
+  //   axios
+  //     .post("https://testapps.trainery.com/api/login/", {
+  //       email: email,
+  //       password: password,
+  //     })
+  //     .then((res) => {
+  //       // localStorage.setItem("token", res.data.token);
+  //       console.log(res);
+  //     })
+  //     .catch((err) => console.error(err));
+  // };
   return (
     <div className="gg">
       <div className="main-co">
@@ -66,6 +102,7 @@ const Newsignin = () => {
             <input
               placeholder="Email address or mobile number"
               className="input-col1"
+              type={"email"}
               onChange={handleChange}
               value={email}
             />
@@ -84,6 +121,8 @@ const Newsignin = () => {
                     placeholder="Password"
                     className="input-col21"
                     type={hidePassword ? "text" : "password"}
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
                   />
                   <i
                     className="fa fa-eye"

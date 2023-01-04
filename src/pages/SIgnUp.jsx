@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import "./styles/sign-in-up.css";
 import { useNavigate } from "react-router-dom";
@@ -5,13 +6,15 @@ import Logo from "../assets/logo_trainery.png";
 import Ellipse from "../assets/Ellipse5.png";
 import Image1 from "../assets/image1.png";
 import Union from "../assets/Union.png";
+
 const NewSignUp = () => {
   const [email, setEmail] = useState("");
+  const [orgName, setOrgName] = useState("");
+  const [password, setPassword] = useState("");
   //const [password,setPassword]=useState("");
   // eslint-disable-next-line no-unused-vars
   const [error, setError] = useState(null);
   const [acceptEmail, setAcceptEmail] = useState(false);
-  const [showPassword, setShowPassword] = useState(false);
   const [hidePassword, setHidePassword] = useState(false);
 
   //
@@ -40,12 +43,6 @@ const NewSignUp = () => {
     setEmail(event.target.value);
   };
 
-  const handleNext = () => {
-    if (acceptEmail) {
-      console.log("came here");
-      setShowPassword(true);
-    }
-  };
   const handleSubmit = () => {};
   return (
     <div className="gg">
@@ -66,8 +63,8 @@ const NewSignUp = () => {
             <input
               placeholder="Orgnization Name"
               className="input-col-page2"
-              onChange={handleChange}
-              value={email}
+              value={orgName}
+              onChange={(e) => setOrgName(e.target.value)}
               style={{}}
             />
             <input
@@ -81,6 +78,8 @@ const NewSignUp = () => {
                 placeholder="Password"
                 className="input-col21"
                 type={hidePassword ? "text" : "password"}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
               />
               <i
                 className="fa fa-eye"
