@@ -8,6 +8,10 @@ import Union from "../assets/Union.png";
 
 import Axios from "../api/Axios";
 
+//
+
+import Cookies from "universal-cookie";
+
 const Newsignin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -18,6 +22,8 @@ const Newsignin = () => {
   const [hidePassword, setHidePassword] = useState(false);
 
   //
+
+  const cookies = new Cookies();
 
   const history = useNavigate();
 
@@ -63,7 +69,11 @@ const Newsignin = () => {
         email: email,
         password: password,
       });
-      localStorage.setItem("token", res.data.token);
+      console.log(res.data);
+      // localStorage.setItem("token", res.data.token);
+
+      cookies.set("jwt_Auth", res?.data?.token);
+
       history("/notifications");
     } catch (err) {
       console.log(err);
@@ -99,44 +109,46 @@ const Newsignin = () => {
             <div className="text-para1">
               One Trainery account for Everything eLearning and HR Solutions
             </div>
-            <input
-              placeholder="Email address or mobile number"
-              className="input-col1"
-              type={"email"}
-              onChange={handleChange}
-              value={email}
-            />
-            {!showPassword ? (
-              <>
-                <button className="btn1" onClick={handleNext}>
-                  Next
-                </button>
+            <form>
+              <input
+                placeholder="Email address or mobile number"
+                className="input-col1"
+                type={"email"}
+                onChange={handleChange}
+                value={email}
+              />
+              {!showPassword ? (
+                <>
+                  <button className="btn1" onClick={handleNext}>
+                    Next
+                  </button>
 
-                <div className="forgot-text1">Forgot password?</div>
-              </>
-            ) : (
-              <div>
-                <div className="password-box">
-                  <input
-                    placeholder="Password"
-                    className="input-col21"
-                    type={hidePassword ? "text" : "password"}
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                  />
-                  <i
-                    className="fa fa-eye"
-                    aria-hidden="true"
-                    onClick={togglePasswordVisiblity}
-                  />
+                  <div className="forgot-text1">Forgot password?</div>
+                </>
+              ) : (
+                <div>
+                  <div className="password-box">
+                    <input
+                      placeholder="Password"
+                      className="input-col21"
+                      type={hidePassword ? "text" : "password"}
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
+                    />
+                    <i
+                      className="fa fa-eye"
+                      aria-hidden="true"
+                      onClick={togglePasswordVisiblity}
+                    />
+                  </div>
+
+                  <button className="btn21" onClick={handleSubmit}>
+                    Next
+                  </button>
+                  <div className="forgot-text21">Forgot password?</div>
                 </div>
-
-                <button className="btn21" onClick={handleSubmit}>
-                  Next
-                </button>
-                <div className="forgot-text21">Forgot password?</div>
-              </div>
-            )}
+              )}
+            </form>
           </div>
           <div className="right">
             <img

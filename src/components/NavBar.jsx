@@ -6,41 +6,19 @@ import Logo from "../assets/logo_trainery.png";
 import Profie from "../assets/profile.png";
 import { useNavigate } from "react-router-dom";
 import { Menu, Dropdown } from "antd";
-
+import Cookies from "universal-cookie";
 import { DownOutlined, SmileOutlined } from "@ant-design/icons";
 const NavBar = () => {
+  const cookies = new Cookies();
   const history = useNavigate();
   const handleLogout = () => {
-    localStorage.removeItem("token");
+    cookies.remove("jwt_Auth");
     history("/");
   };
 
-  // const items2 = (
-  //   <Menu>
-  //     <Menu.ItemGroup key="1" title="Hello user">
-  //       <Menu.Item key="1">
-  //         <div
-  //           onClick={() => {
-  //             console.log("View Profile Clicked");
-  //           }}
-  //         >
-  //           View Profile
-  //           {/* <Checkbox style={{ paddingLeft: "20px" }} /> */}
-  //         </div>
-  //       </Menu.Item>
-  //       <Menu.Item key="2">
-  //         <div onClick={handleLogout}>
-  //           Logout
-  //           {/* <Checkbox style={{ paddingLeft: "29px" }} /> */}
-  //         </div>
-  //       </Menu.Item>
-  //     </Menu.ItemGroup>
-  //   </Menu>
-  // );
-
   const items = [
     {
-      label: "Hello User",
+      label: <strong>Hello John</strong>,
     },
     {
       type: "divider",
