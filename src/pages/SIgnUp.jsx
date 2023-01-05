@@ -45,80 +45,66 @@ const NewSignUp = () => {
 
   const handleSubmit = () => {};
   return (
-    <div className="gg">
-      <div className="main-co">
-        <div className="cont">
-          <div className="left">
-            <img
-              alt=""
-              src={Logo}
-              width="138.75"
-              height="30"
-              className="logo1"
-            />
-            <div className="signIn_text1">Sign up</div>
-            <div className="text-para1">
-              Enter the below details and create your own account.
-            </div>
-            <input
-              placeholder="Orgnization Name"
-              className="input-col-page2"
-              value={orgName}
-              onChange={(e) => setOrgName(e.target.value)}
-              style={{}}
-            />
-            <input
-              placeholder="Email address or mobile number"
-              className="second-box"
-              onChange={handleChange}
-              value={email}
-            />
-            <div className="password-box">
-              <input
-                placeholder="Password"
-                className="input-col21"
-                type={hidePassword ? "text" : "password"}
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-              />
-              <i
-                className="fa fa-eye"
-                aria-hidden="true"
-                onClick={togglePasswordVisiblity}
-              />
-            </div>
-            <button className="btn21" onClick={handleSubmit}>
-              Submit
-            </button>
+    <div className="main-co">
+      <div className="cont">
+        <div className="left">
+          <img alt="" src={Logo} width="138.75" height="30" className="logo1" />
+          <div className="signIn_text1">Sign up</div>
+          <div className="text-para1">
+            Enter the below details and create your own account.
           </div>
-          <div className="right">
-            <img
-              alt=""
-              src={Union}
-              width="77.48px"
-              height="67px"
-              className="img31"
+          <input
+            placeholder="Orgnization Name"
+            className="input-col-page2"
+            value={orgName}
+            onChange={(e) => setOrgName(e.target.value)}
+            style={{}}
+          />
+          <input
+            placeholder="Email address or mobile number"
+            className="second-box"
+            onChange={handleChange}
+            value={email}
+          />
+          <div className="password-box">
+            <input
+              placeholder="Password"
+              className="input-col21"
+              type={hidePassword ? "text" : "password"}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
             />
-            <img
-              alt=""
-              src={Ellipse}
-              width="150"
-              height="150"
-              className="img1"
-            />
-            <div className="para-text1">
-              Growing your people,
-              <br />
-              growing your company, together
-            </div>
-            <img
-              alt=""
-              src={Image1}
-              width="435.87px"
-              height="146.78px"
-              className="peopleImg"
+            <i
+              className="fa fa-eye"
+              aria-hidden="true"
+              onClick={togglePasswordVisiblity}
             />
           </div>
+          <button className="btn21" onClick={handleSubmit}>
+            Submit
+          </button>
+        </div>
+        <div className="right">
+          <img
+            alt=""
+            src={Union}
+            width="77.48px"
+            height="67px"
+            className="img31"
+          />
+          <img alt="" src={Ellipse} width="150" height="150" className="img1" />
+          <div className="para-text1">
+            Growing your people,
+            <br />
+            growing your company, together
+          </div>
+          <img
+            alt=""
+            src={Image1}
+            width="435.87px"
+            height="146.78px"
+            className="peopleImg"
+          />
         </div>
       </div>
       <div className="end-text1">

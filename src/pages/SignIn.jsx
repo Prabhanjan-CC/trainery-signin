@@ -80,104 +80,77 @@ const Newsignin = () => {
     }
   };
 
-  // const handleSubmit2 = (e) => {
-  //   e.preventDefault();
-  //   axios
-  //     .post("https://testapps.trainery.com/api/login/", {
-  //       email: email,
-  //       password: password,
-  //     })
-  //     .then((res) => {
-  //       // localStorage.setItem("token", res.data.token);
-  //       console.log(res);
-  //     })
-  //     .catch((err) => console.error(err));
-  // };
   return (
-    <div className="gg">
-      <div className="main-co">
-        <div className="cont">
-          <div className="left">
-            <img
-              alt=""
-              src={Logo}
-              width="138.75"
-              height="30"
-              className="logo1"
+    <div className="main-co">
+      <div className="cont">
+        <div className="left">
+          <img alt="" src={Logo} width="138.75" height="30" className="logo1" />
+          <div className="signIn_text1">Sign in</div>
+          <div className="text-para1">
+            One Trainery account for Everything eLearning and HR Solutions
+          </div>
+          <form>
+            <input
+              placeholder="Email address or mobile number"
+              className="input-col1"
+              type={"email"}
+              onChange={handleChange}
+              value={email}
             />
-            <div className="signIn_text1">Sign in</div>
-            <div className="text-para1">
-              One Trainery account for Everything eLearning and HR Solutions
-            </div>
-            <form>
-              <input
-                placeholder="Email address or mobile number"
-                className="input-col1"
-                type={"email"}
-                onChange={handleChange}
-                value={email}
-              />
-              {!showPassword ? (
-                <>
-                  <button className="btn1" onClick={handleNext}>
-                    Next
-                  </button>
+            {!showPassword ? (
+              <>
+                <button className="btn1" onClick={handleNext}>
+                  Next
+                </button>
 
-                  <div className="forgot-text1">Forgot password?</div>
-                </>
-              ) : (
-                <div>
-                  <div className="password-box">
-                    <input
-                      placeholder="Password"
-                      className="input-col21"
-                      type={hidePassword ? "text" : "password"}
-                      value={password}
-                      onChange={(e) => setPassword(e.target.value)}
-                    />
-                    <i
-                      className="fa fa-eye"
-                      aria-hidden="true"
-                      onClick={togglePasswordVisiblity}
-                    />
-                  </div>
-
-                  <button className="btn21" onClick={handleSubmit}>
-                    Next
-                  </button>
-                  <div className="forgot-text21">Forgot password?</div>
+                <div className="forgot-text1">Forgot password?</div>
+              </>
+            ) : (
+              <div>
+                <div className="password-box">
+                  <input
+                    placeholder="Password"
+                    className="input-col21"
+                    type={hidePassword ? "text" : "password"}
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                  />
+                  <i
+                    className="fa fa-eye"
+                    aria-hidden="true"
+                    onClick={togglePasswordVisiblity}
+                  />
                 </div>
-              )}
-            </form>
+
+                <button className="btn21" onClick={handleSubmit}>
+                  Next
+                </button>
+                <div className="forgot-text21">Forgot password?</div>
+              </div>
+            )}
+          </form>
+        </div>
+        <div className="right">
+          <img
+            alt=""
+            src={Union}
+            width="77.48px"
+            height="67px"
+            className="img31"
+          />
+          <img alt="" src={Ellipse} width="150" height="150" className="img1" />
+          <div className="para-text1">
+            Growing your people,
+            <br />
+            growing your company, together
           </div>
-          <div className="right">
-            <img
-              alt=""
-              src={Union}
-              width="77.48px"
-              height="67px"
-              className="img31"
-            />
-            <img
-              alt=""
-              src={Ellipse}
-              width="150"
-              height="150"
-              className="img1"
-            />
-            <div className="para-text1">
-              Growing your people,
-              <br />
-              growing your company, together
-            </div>
-            <img
-              alt=""
-              src={Image1}
-              width="435.87px"
-              height="146.78px"
-              className="peopleImg"
-            />
-          </div>
+          <img
+            alt=""
+            src={Image1}
+            width="435.87px"
+            height="146.78px"
+            className="peopleImg"
+          />
         </div>
       </div>
       <div className="end-text1">
