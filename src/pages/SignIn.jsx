@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from "react";
 import "./styles/sign-in-up.css";
 import { useNavigate } from "react-router-dom";
@@ -31,7 +32,7 @@ const Newsignin = () => {
     history("/signup");
   };
   useEffect(() => {
-    const token = localStorage.getItem("token");
+    const token = cookies.get("jwt_Auth");
     if (token) {
       history("/notifications");
     }
@@ -94,6 +95,7 @@ const Newsignin = () => {
               placeholder="Email address or mobile number"
               className="input-col1"
               type={"email"}
+              name={"email"}
               onChange={handleChange}
               value={email}
             />
